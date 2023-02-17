@@ -1,0 +1,66 @@
+header {
+    height: 30%;
+    width: 100%;
+    background-color: $nav-foot;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 18px 0px 15px 20px;
+        }
+    }
+    .menu {
+        
+        .dropdown{
+            display: none;
+        }
+        .opcion1 {
+            display: flex;
+            .container-fluid {
+                .d-flex {
+                    width: 300px;
+                    margin-left: 5%;
+                    button{
+                        background-color: black;
+                        border: 2px solid red;
+                        color: white;
+                        font-size: nth($letrapx, 4 );
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: italic;
+                        transition: 1s;
+                        &:hover{
+                            background-color: red;
+                            border: 2px solid red;
+                            color:black;}
+                        }
+                    }                  
+                }
+            }
+            ul{
+                display: flex;
+                margin-right: 20px;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: nth($letrapx, 5 );
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-style: italic;
+                        margin-left: 30px;
+                        transition: 2s;
+                        &:hover{
+                            color:red;
+                        }
+                    }
+                }
+                .carrito{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }

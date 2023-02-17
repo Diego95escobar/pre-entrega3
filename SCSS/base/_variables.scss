@@ -1,0 +1,48 @@
+
+/*-----VARIABLES-----*/
+
+/*Colores*/
+
+$nav-foot: black;
+$resaltado: red;
+$titulo:#dc0a0a;
+$card-1: whitesmoke;
+$card-prod:white;
+
+
+/*--------LISTAS------*/
+
+$letrapx:
+12px,
+16px,
+18px,
+20px,
+22px,
+24px,
+30px;
+
+/*-----EXTENDS---*/
+
+%Tarj-producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+
+/*-----Mixins----*/
+
+@mixin tarjetas ($display, $wrap, $justify, $aitems, $talign){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $aitems;
+    text-align: $talign;
+}

@@ -1,0 +1,224 @@
+@media screen and (max-width:1440px){
+
+    main .impre{
+        align-items: center;
+    }
+    main .impre2{
+        height: 100%;
+    }
+    main .impre .impre-contenedor{
+            display: grid;
+            justify-items: center;           
+            grid-template-columns: repeat(2,1fr);
+            height: 100vh;
+            width: 80%;
+            margin: 0px 10% 0px 10%;
+    }   
+}
+
+@media screen and (max-width:1200px){
+    header .menu .opcion1{
+        display: none;
+    }
+    header .menu .dropdown{
+        display: block ;
+    }
+
+    header .menu .dropdown .dropdown-menu{
+        display: block;
+        overflow: hidden;
+    }
+
+
+    header .menu .dropdown .dropdown-menu .container-fluid .d-flex button{
+        background-color: black;
+        border: 2px solid red;
+        color: white;
+        font-size: nth($letrapx , 3 );
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        transition: 2s;
+        &:hover{
+        background-color: red;
+        border: 2px solid red;
+        color:black;
+        }  
+    }
+    header .menu .dropdown a img{
+        margin: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    header .menu .dropdown a{
+        margin: 20px;
+        padding: 0;      
+    }
+    header .menu .dropdown .dropdown-menu .container-fluid .d-flex{   
+        margin: 20px;
+        width: 200px;
+    }
+    header .menu .dropdown .dropdown-toggle{
+        margin-right: 60px;
+        background-color: red;
+        font-size: nth($letrapx , 3 );
+        transition: 2s;
+        &:hover{
+        background-color: rgba(160, 32, 32, 0.929);
+        }
+    }
+    header .menu .dropdown .dropdown-menu li a{
+        font-size: nth($letrapx , 3 );
+    }
+
+    main .impre .impre-title{
+        width: 90%;
+        margin: 50px 5% 50px 5%;
+    }
+
+    main .secundario-terciario {
+        width: 90%;
+        margin: 100px 5% 100px 5%;
+    }
+
+    main .impre .grid-contenedor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;   
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    main .impre{
+        height: 1000px;
+
+    }
+    main .impre2{
+        height: 100%;
+    }
+
+    main .impre .impre-title{
+            width: 100%;
+            height: 40px;
+            margin: 20px 0px 20px 0px;
+            font-size: nth($letrapx, 5 );
+        }
+
+    main .impre .impre-contenedor .impre-producto{
+        margin: 30px;       
+    }
+
+    main .secundario-terciario{
+        width: 100%;
+        margin: 100px 0% 100px 0%;
+}
+
+    .contacto img{
+        width: 100%;
+        height: 40vh;
+    }
+    main .impre-title{
+        width: 100%;
+        height: 40px;
+        margin: 50px 0% 50px 0%;
+    }
+}
+
+@media screen and (max-width:700px){
+    main .impre{
+        height: 1500px;
+    }
+    main .impre2{
+        height: 100%;
+    }
+    main .impre .impre-contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .pie div h4{
+        font-size: nth($letrapx, 2 );
+    }
+    footer .pie div p{
+        font-size: nth($letrapx, 1 );
+    }
+    footer section{
+        flex-direction: column;
+    } 
+    main .hero div{
+        font-size: nth($letrapx, 6 );
+    }
+    main .secundario-terciario{
+        width: 100%;
+        height: 400px;
+        margin: 100px 0% 100px 0%;
+        
+    }
+    main .secundario-terciario div h3{
+        font-size: nth($letrapx , 2 );
+    }
+    main .secundario-terciario div p{
+        font-size: nth($letrapx , 2 );
+    }
+    main .secundario-terciario .boton-secter{
+        font-size: nth($letrapx , 2 );
+        margin-bottom: 10px;
+
+    }
+}
+ 
+@media screen and (max-width:580px){
+
+    main .hero div {
+        font-size: nth($letrapx , 4 );
+    }
+    main .impre .impre-contenedor .impre-producto h3{
+        font-size: nth($letrapx, 2 );
+    }
+    main .impre .impre-contenedor .impre-producto a{
+        font-size: nth($letrapx, 2);
+        padding: 1px;
+
+    }
+    main .impre2{
+        height: 100%;
+    }
+
+    header nav ul li{
+        padding: 7px;
+    }
+    main .secundario-terciario{
+        flex-direction: column;
+        height: 70vh;
+    }
+    main .secundario-terciario img{
+        width: 100%;
+        height: 45%;
+    }
+    main .secundario-terciario div{
+        height: 55%;
+        width: 100%; 
+    }
+    main .impre .grid-contenedor{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .contacto img{
+        height: 35vh;
+    }
+    .contacto{
+        font-size: 14px;
+    }
+    header .menu .dropdown .dropdown-menu li a{
+        font-size: nth($letrapx , 1);
+    }
+}
+
+@media screen and (max-width:480px){
+    main .impre2{
+        height: 100%;
+    }
+    footer section div{
+        flex-direction: column;
+    }
+}
